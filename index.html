@@ -1,0 +1,66 @@
+	<!DOCTYPE HTML>
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+			<meta charset="UTF-8">
+			<title>Días junto al amor de mi vida</title>
+			<link rel="stylesheet" type="text/css" href="./css/format.css">
+		</head>
+
+		<body style="margin:0px">
+			<audio autoplay loop>
+				<source src="music/music.mp3" type="audio/mpeg">
+				Your browser does not support the audio.
+			</audio>
+			<canvas></canvas>
+			<div id="imgTxt">
+				<span id="Txt"></span> <br />
+				<span id="tmp"></span>
+				<img id="img" src="">
+			</div>
+			<div id="heartTxt">
+				<span id="clickMe">Click!</span>
+				<div id="heart">
+					<button id="button" onclick="play()"></button>
+				</div>
+			</div>
+			<div id="content">
+				<h2 id="together">Llevamos juntos en total</h2>
+				<div id="timer">
+					<b id="d"></b> Días 
+					<b id="h"></b> Horas
+					<b id="m"></b> Minutos
+					<b id="s"></b> Segundos
+				</div>
+			</div>
+
+			<div id = "typeDiv">
+				<span id="txt1"></span> <br />
+				<span id="txt2"></span>
+			</div>		
+
+			<script >
+				var ok = 0;
+				var flag = 1;
+				var myImage = document.getElementById("img");
+				var myTxt = document.getElementById("Txt");
+				var imageArray = ["pic/pic1.jpeg", "pic/pic2.jpeg", "pic/pic3.jpeg", "pic/pic4.jpeg", "pic/pic5.jpeg", "pic/pic6.jpeg", 
+				"pic/pic7.jpeg", "pic/pic8.jpeg", "pic/pic9.jpeg", "pic/pic10.jpeg", "pic/pic11.jpeg", "pic/pic12.jpeg", "pic/pic13.jpeg",
+				"pic/pic14.jpeg", "pic/pic15.jpeg", "pic/pic16.jpeg", "pic/pic17.jpeg", "pic/pic18.jpeg", "pic/pic19.jpeg", "pic/pic20.jpeg", "pic/pic21.jpeg", "pic/pic22.jpeg", "pic/pic23.jpeg", "pic/pic24.jpeg", "pic/pic25.jpeg"];
+				var imageIndex = 0;
+				var txtArray = ["Hola amor mío", "He preparado esto para ti, con todo mi amor", "Quiero aprovechar y decirte cuanto te amo ♡",
+				"Gracias por aparecer en mi vida", "¿Recuerdas cuando empezamos a salir?", "A partir de ese momento vivimos muchas cosas", "Creamos muchos recuerdos, los cuales siempre llevo conmigo",
+				"Todas las veces que reimos juntos", "Nuestras primeras salidas a la playa", "Cuando e invitaste a tu casa <3", "Agradezco a Dios que seas tú", 
+				"Por ti, mi vida es más bonita", "Tan bonita como tu lo eres :p", "Bonita al igual que tu sonrisa", "Hemos vivido muchos momentos", "Momentos hermosos", "Días especiales", "Muy especiales jaja",
+				"y aunque han habido momentos no tan buenos", "Siempre quiero volver a verte felíz", "Quiero que sigas a mi lado, y yo seguirte a ti", "Compartir la misma felicidad, tristeza y sueños", "Si, tu me haces querer todo eso",
+				"Te quiero a ti, y solo a ti", "Feliz nuevo día.. un día más juntos. Te amo"];
+				var len = imageArray.length;
+				var t = 0;
+			</script>
+			
+			<script type="text/javascript" src="./js/stars.js"></script>
+			<script type="text/javascript" src="./js/typeWriter.js"></script>
+			<script type="text/javascript" src="./js/date.js"></script>
+			<script type="text/javascript" src="./js/playImg.js"></script>
+		</body>
+	</html>
